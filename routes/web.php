@@ -25,3 +25,7 @@ $router->get('upload', [
 $router->post('upload', [
     'as' => 'upload.store', 'uses' => 'UploadController@upload'
 ]);
+
+$router->post('upload-to-quare', [
+    'as' => 'upload.storeSquare', 'uses' => 'UploadController@uploadToSquare'
+]);
